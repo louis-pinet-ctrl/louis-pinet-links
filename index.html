@@ -226,6 +226,57 @@
     color: var(--ink-mute);
   }
 
+  /* ----- Piliers d'expertise (chips au-dessus des boutons) ----- */
+
+  .pillars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: clamp(28px, 7vw, 38px);
+    animation: rise 0.7s 0.12s ease-out both;
+  }
+
+  .pillar {
+    --d: 0s;
+    flex: 1 1 calc(50% - 4px);
+    min-width: 140px;
+    padding: 12px 14px;
+    background: var(--bg-elev);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--ink);
+    text-decoration: none;
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.005em;
+    text-align: center;
+    transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
+                background 0.25s ease,
+                border-color 0.25s ease,
+                color 0.25s ease;
+    animation: rise 0.7s var(--d) ease-out both;
+  }
+
+  .pillar:nth-child(1) { --d: 0.14s; }
+  .pillar:nth-child(2) { --d: 0.20s; }
+  .pillar:nth-child(3) { --d: 0.26s; }
+  .pillar:nth-child(4) { --d: 0.32s; }
+
+  .pillar:hover,
+  .pillar:focus-visible {
+    background: #2c2c2c;
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-1px);
+    outline: none;
+  }
+
+  .pillar:active {
+    transform: translateY(0);
+  }
+
   /* ----- Boutons ----- */
 
   .links {
@@ -423,6 +474,15 @@
     <div class="subrole">Droit de la restauration</div>
     <p class="tagline">« Je défends ceux qui nous nourrissent. »</p>
   </header>
+
+  <div class="divider"><span>Mon expertise</span></div>
+
+  <nav class="pillars" aria-label="Domaines d'intervention">
+    <a class="pillar" href="https://wa.me/33686259294?text=Bonjour%20Ma%C3%AEtre%2C%20je%20souhaite%20lancer%20mon%20restaurant%20et%20j%27aimerais%20en%20discuter%20avec%20vous." target="_blank" rel="noopener">Lancer mon resto</a>
+    <a class="pillar" href="https://wa.me/33686259294?text=Bonjour%20Ma%C3%AEtre%2C%20je%20souhaite%20c%C3%A9der%20mon%20fonds%20de%20commerce%20et%20j%27aimerais%20en%20discuter%20avec%20vous." target="_blank" rel="noopener">Céder mon resto</a>
+    <a class="pillar" href="https://wa.me/33686259294?text=Bonjour%20Ma%C3%AEtre%2C%20j%27ai%20un%20sujet%20sur%20mon%20bail%20commercial%20et%20j%27aimerais%20en%20discuter%20avec%20vous." target="_blank" rel="noopener">Négocier mon bail</a>
+    <a class="pillar" href="https://wa.me/33686259294?text=Bonjour%20Ma%C3%AEtre%2C%20j%27ai%20un%20projet%20de%20franchise%20et%20j%27aimerais%20en%20discuter%20avec%20vous." target="_blank" rel="noopener">Franchise</a>
+  </nav>
 
   <div class="divider"><span>Me joindre</span></div>
 
