@@ -1,0 +1,25 @@
+# Config locale Claude Code (jamais commitée)
+.claude/
+
+# Archives originales du template
+louis-pinet-links.zip
+*.zip
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Windows
+$RECYCLE.BIN/
+ehthumbs.db
