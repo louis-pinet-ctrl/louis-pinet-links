@@ -607,6 +607,48 @@
     transform: translateX(4px);
   }
 
+  /* ----- Variante PRIMARY : lime plein, le bouton ultime (RDV) ----- */
+
+  .featured.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    box-shadow: 0 10px 32px -8px rgba(196, 233, 19, 0.45);
+    margin-bottom: clamp(36px, 9vw, 50px);
+  }
+
+  .featured.primary:hover,
+  .featured.primary:focus-visible {
+    background: #d4f723;
+    border-color: #d4f723;
+    box-shadow: 0 16px 42px -10px rgba(196, 233, 19, 0.55);
+  }
+
+  .featured.primary .icon {
+    background: rgba(30, 30, 30, 0.12);
+  }
+
+  .featured.primary:hover .icon {
+    background: rgba(30, 30, 30, 0.2);
+    transform: scale(1.05) rotate(-3deg);
+  }
+
+  .featured.primary .icon svg {
+    stroke: #1e1e1e;
+  }
+
+  .featured.primary .label {
+    color: #1e1e1e;
+    font-weight: 700;
+  }
+
+  .featured.primary .sub {
+    color: rgba(30, 30, 30, 0.72);
+  }
+
+  .featured.primary .arrow {
+    stroke: #1e1e1e;
+  }
+
   /* ----- Pied de page ----- */
 
   .foot {
@@ -686,7 +728,7 @@
     <a class="pillar" href="./franchise.html?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=pillar-franchise">Franchise</a>
   </nav>
 
-  <div class="divider"><span>Outil gratuit</span></div>
+  <div class="divider"><span>Démarre maintenant</span></div>
 
   <a class="featured" href="https://www.louispinetavocat.fr/simulateur-valorisation?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=simulator" target="_blank" rel="noopener">
     <span class="icon" aria-hidden="true">
@@ -713,6 +755,25 @@
     </svg>
   </a>
 
+  <a class="featured primary" href="https://calendly.com/contact-louispinetavocat/30min?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=rdv-primary" target="_blank" rel="noopener">
+    <span class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="16" rx="2" />
+        <path d="M3 10h18" />
+        <path d="M8 3v4" />
+        <path d="M16 3v4" />
+      </svg>
+    </span>
+    <span class="text">
+      <span class="label">Prendre rendez-vous</span>
+      <span class="sub">Consultation 30 min · en visio</span>
+    </span>
+    <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M5 12h14" />
+      <path d="M13 5l7 7-7 7" />
+    </svg>
+  </a>
+
   <div class="divider"><span>Me joindre</span></div>
 
   <nav class="links" aria-label="Liens utiles">
@@ -728,25 +789,6 @@
       <span class="text">
         <span class="label">Site internet</span>
         <span class="sub">louispinetavocat.fr</span>
-      </span>
-      <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M5 12h14" />
-        <path d="M13 5l7 7-7 7" />
-      </svg>
-    </a>
-
-    <a class="link" href="https://calendly.com/contact-louispinetavocat/30min?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links" target="_blank" rel="noopener">
-      <span class="icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24">
-          <rect x="3" y="5" width="18" height="16" rx="2" />
-          <path d="M3 10h18" />
-          <path d="M8 3v4" />
-          <path d="M16 3v4" />
-        </svg>
-      </span>
-      <span class="text">
-        <span class="label">Prendre rendez-vous</span>
-        <span class="sub">Consultation 30 min en visio</span>
       </span>
       <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M5 12h14" />
