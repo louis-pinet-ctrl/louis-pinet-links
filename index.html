@@ -244,13 +244,20 @@
     margin: 0 auto;
   }
 
-  /* ----- Trust signal (preuve sociale) ----- */
+  /* ----- Trust signals (preuves sociales empilées) ----- */
+
+  .proofs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-top: 18px;
+  }
 
   .proof {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin: 18px auto 0;
     padding: 6px 14px;
     background: rgba(196, 233, 19, 0.06);
     border: 1px solid rgba(196, 233, 19, 0.18);
@@ -261,6 +268,10 @@
     color: var(--ink);
     letter-spacing: 0.01em;
     animation: rise 0.7s 0.08s ease-out both;
+  }
+
+  .proof:nth-child(2) {
+    animation-delay: 0.14s;
   }
 
   .proof .stars {
@@ -735,10 +746,17 @@
     <div class="role">Avocat des Restaurateurs</div>
     <div class="subrole">Droit de la restauration</div>
     <p class="tagline">« Je défends ceux qui nous nourrissent. »</p>
-    <div class="proof" role="note" aria-label="Note et nombre de clients accompagnés">
-      <span class="stars">⭐ 5,0</span>
-      <span class="sep">·</span>
-      <span class="count">100+ restaurateurs accompagnés</span>
+    <div class="proofs">
+      <div class="proof" role="note" aria-label="Note et nombre de clients accompagnés">
+        <span class="stars">⭐ 5,0</span>
+        <span class="sep">·</span>
+        <span class="count">100+ restaurateurs accompagnés</span>
+      </div>
+      <div class="proof" role="note" aria-label="Nombre d'abonnés LinkedIn">
+        <span class="stars">👥 15k</span>
+        <span class="sep">·</span>
+        <span class="count">abonnés sur LinkedIn</span>
+      </div>
     </div>
   </header>
 
