@@ -475,6 +475,29 @@
     letter-spacing: 0.01em;
   }
 
+  .link .count-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    margin-left: 8px;
+    background: rgba(196, 233, 19, 0.15);
+    border: 1px solid rgba(196, 233, 19, 0.32);
+    border-radius: 999px;
+    font-family: var(--sans);
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    vertical-align: 1px;
+    transition: background 0.25s ease, border-color 0.25s ease;
+  }
+
+  .link:hover .count-badge {
+    background: rgba(196, 233, 19, 0.22);
+    border-color: rgba(196, 233, 19, 0.45);
+  }
+
   .link .arrow {
     flex-shrink: 0;
     width: 18px;
@@ -805,8 +828,8 @@
         </svg>
       </span>
       <span class="text">
-        <span class="label">LinkedIn</span>
-        <span class="sub">15k abonnés · Veille CHR</span>
+        <span class="label">LinkedIn <span class="count-badge">15k</span></span>
+        <span class="sub">Veille CHR · communauté restaurateurs</span>
       </span>
       <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M5 12h14" />
