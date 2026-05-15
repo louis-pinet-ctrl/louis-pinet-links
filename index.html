@@ -414,6 +414,118 @@
     transform: translateX(4px);
   }
 
+  /* ----- Bouton featured (simulateur) ----- */
+
+  .featured {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 22px;
+    background: linear-gradient(135deg, rgba(196, 233, 19, 0.08) 0%, rgba(196, 233, 19, 0.03) 100%);
+    border: 1px solid rgba(196, 233, 19, 0.35);
+    border-radius: 14px;
+    color: var(--ink);
+    text-decoration: none;
+    margin-bottom: clamp(28px, 7vw, 38px);
+    transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
+                background 0.25s ease,
+                border-color 0.25s ease,
+                box-shadow 0.25s ease;
+    animation: rise 0.7s 0.4s ease-out both;
+    overflow: hidden;
+  }
+
+  .featured:hover,
+  .featured:focus-visible {
+    background: linear-gradient(135deg, rgba(196, 233, 19, 0.14) 0%, rgba(196, 233, 19, 0.05) 100%);
+    border-color: rgba(196, 233, 19, 0.55);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px -12px rgba(196, 233, 19, 0.25);
+    outline: none;
+  }
+
+  .featured .icon {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.25s ease;
+  }
+
+  .featured:hover .icon {
+    transform: scale(1.05) rotate(-3deg);
+  }
+
+  .featured .icon svg {
+    width: 22px;
+    height: 22px;
+    stroke: #1e1e1e;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .featured .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .featured .label {
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: -0.005em;
+  }
+
+  .featured .sub {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--ink-mute);
+    letter-spacing: 0.01em;
+  }
+
+  .featured .badge {
+    display: inline-block;
+    padding: 2px 7px;
+    background: rgba(196, 233, 19, 0.15);
+    border: 1px solid rgba(196, 233, 19, 0.3);
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .featured .arrow {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    stroke: var(--accent);
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .featured:hover .arrow {
+    transform: translateX(4px);
+  }
+
   /* ----- Pied de page ----- */
 
   .foot {
@@ -483,6 +595,33 @@
     <a class="pillar" href="https://www.louispinetavocat.fr/service/negocier-mon-bail?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=pillar-bail" target="_blank" rel="noopener">Négocier mon bail</a>
     <a class="pillar" href="./franchise.html?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=pillar-franchise">Franchise</a>
   </nav>
+
+  <div class="divider"><span>Outil gratuit</span></div>
+
+  <a class="featured" href="https://www.louispinetavocat.fr/simulateur-valorisation?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=simulator" target="_blank" rel="noopener">
+    <span class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24">
+        <rect x="4" y="3" width="16" height="18" rx="2" />
+        <path d="M8 7h8" />
+        <path d="M8 11h2" />
+        <path d="M12 11h2" />
+        <path d="M16 11h0.01" />
+        <path d="M8 15h2" />
+        <path d="M12 15h2" />
+        <path d="M16 15h0.01" />
+        <path d="M8 19h2" />
+        <path d="M12 19h6" />
+      </svg>
+    </span>
+    <span class="text">
+      <span class="label">Estimer la valeur de mon resto</span>
+      <span class="sub"><span class="badge">Gratuit</span> Simulateur en 2 minutes</span>
+    </span>
+    <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M5 12h14" />
+      <path d="M13 5l7 7-7 7" />
+    </svg>
+  </a>
 
   <div class="divider"><span>Me joindre</span></div>
 
