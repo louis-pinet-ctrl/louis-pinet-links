@@ -144,20 +144,30 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 64px;
-    height: 64px;
+    width: 76px;
+    height: 76px;
     border-radius: 50%;
-    background: var(--accent);
-    color: #1e1e1e;
-    font-family: var(--sans);
-    font-weight: 600;
-    font-size: 17px;
-    letter-spacing: -0.01em;
+    background: #1e1e1e;
+    border: 2px solid var(--accent);
     margin-bottom: 22px;
     box-shadow: 0 8px 32px -8px rgba(196, 233, 19, 0.35);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
 
-  .mark span { display: inline-block; }
+  .mark:hover {
+    box-shadow: 0 12px 40px -8px rgba(196, 233, 19, 0.5);
+    transform: scale(1.03);
+  }
+
+  .mark img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
 
   .name {
     font-family: var(--serif);
@@ -616,7 +626,9 @@
 <main class="wrap">
 
   <header class="head">
-    <div class="mark" aria-hidden="true"><span>ADR</span></div>
+    <div class="mark">
+      <img src="louis.jpg" alt="Louis Pinet, Avocat des Restaurateurs" width="76" height="76" />
+    </div>
     <h1 class="name">Louis Pinet</h1>
     <div class="role">Avocat des Restaurateurs</div>
     <div class="subrole">Droit de la restauration</div>
