@@ -145,9 +145,9 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 76px;
-    height: 76px;
-    margin-bottom: 16px;
+    width: 68px;
+    height: 68px;
+    margin-bottom: 12px;
     transition: transform 0.3s ease;
   }
 
@@ -196,21 +196,21 @@
   .name {
     font-family: var(--serif);
     font-weight: 400;
-    font-size: clamp(26px, 7vw, 30px);
+    font-size: clamp(24px, 6.5vw, 28px);
     letter-spacing: -0.02em;
     line-height: 1.1;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
   }
 
   .brand {
     font-family: var(--serif);
     font-style: italic;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 13px;
     color: var(--ink);
     opacity: 0.7;
     letter-spacing: 0;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .role {
@@ -237,8 +237,8 @@
     font-family: var(--serif);
     font-style: italic;
     font-weight: 300;
-    font-size: clamp(15px, 4.2vw, 17px);
-    line-height: 1.5;
+    font-size: clamp(14px, 3.8vw, 15px);
+    line-height: 1.45;
     color: var(--ink-mute);
     max-width: 22ch;
     margin: 0 auto;
@@ -250,8 +250,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
-    margin-top: 18px;
+    gap: 5px;
+    margin-top: 14px;
   }
 
   .proof {
@@ -334,7 +334,7 @@
     display: flex;
     align-items: center;
     gap: 14px;
-    margin: clamp(20px, 5vw, 28px) 0 clamp(14px, 4vw, 18px);
+    margin: clamp(16px, 4vw, 22px) 0 clamp(12px, 3vw, 14px);
     animation: rise 0.7s 0.1s ease-out both;
   }
 
@@ -360,10 +360,14 @@
   .pillars {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 7px;
     justify-content: center;
-    margin-bottom: clamp(20px, 5vw, 28px);
+    margin-bottom: clamp(14px, 4vw, 20px);
     animation: rise 0.7s 0.12s ease-out both;
+  }
+
+  .pillar {
+    padding: 10px 12px;
   }
 
   .pillar {
@@ -805,9 +809,9 @@
         <span class="sep">·</span>
         <span class="count">communauté de restaurateurs</span>
       </a>
-      <div class="proof pledge" role="note" aria-label="Engagement : reponse rapide et premier echange offert">
+      <div class="proof pledge" role="note" aria-label="Engagement : pilotage du dossier via WhatsApp et premier echange offert">
         <span class="stars">⚡</span>
-        <span class="count">Réponse rapide · Premier échange offert</span>
+        <span class="count">Pilotage dossier via WhatsApp · Premier échange offert</span>
       </div>
     </div>
   </header>
