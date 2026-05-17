@@ -410,6 +410,79 @@
     transform: translateY(0);
   }
 
+  /* ----- Témoignages ----- */
+
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: clamp(18px, 5vw, 26px);
+  }
+
+  .testi {
+    --d: 0s;
+    display: block;
+    padding: 16px 18px;
+    background: var(--bg-elev);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    color: var(--ink);
+    text-decoration: none;
+    transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
+                background 0.25s ease,
+                border-color 0.25s ease;
+    animation: rise 0.7s var(--d) ease-out both;
+  }
+
+  .testi:nth-child(1) { --d: 0.16s; }
+  .testi:nth-child(2) { --d: 0.22s; }
+  .testi:nth-child(3) { --d: 0.28s; }
+
+  .testi:hover,
+  .testi:focus-visible {
+    background: #2c2c2c;
+    border-color: rgba(196, 233, 19, 0.32);
+    transform: translateY(-1px);
+    outline: none;
+  }
+
+  .testi .testi-stars {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+  }
+
+  .testi .quote {
+    display: block;
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+
+  .testi .author {
+    display: block;
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: -0.005em;
+    margin-bottom: 1px;
+  }
+
+  .testi .context {
+    display: block;
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--ink-mute);
+    letter-spacing: 0.01em;
+  }
+
   /* ----- Boutons ----- */
 
   .links {
@@ -824,6 +897,33 @@
     <a class="pillar" href="./bail.html?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=pillar-bail">Négocier mon bail</a>
     <a class="pillar" href="./franchise.html?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=pillar-franchise">Franchise</a>
   </nav>
+
+  <div class="divider"><span>Ils en parlent</span></div>
+
+  <div class="testimonials" aria-label="Témoignages clients vérifiables sur Google">
+
+    <a class="testi" href="https://www.google.com/maps/place/Louis+Pinet+Avocat/@47.2243345,-1.5694803,17z/data=!3m1!4b1!4m6!3m5!1s0x4805ed860141f9fd:0xff1eadb65493fbea!8m2!3d47.2243345!4d-1.5669054!16s%2Fg%2F11ptngndzg?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=testi-gregoire" target="_blank" rel="noopener noreferrer" aria-label="Avis 5 étoiles de Grégoire B. sur Google · cliquer pour voir tous les avis">
+      <span class="testi-stars" aria-hidden="true">⭐⭐⭐⭐⭐</span>
+      <span class="quote">« Une vraie expertise en restauration qui permet d'anticiper les problématiques. Un soulagement d'avoir Louis à nos côtés. »</span>
+      <span class="author">Grégoire B.</span>
+      <span class="context">Développement d'un groupe de restaurants</span>
+    </a>
+
+    <a class="testi" href="https://www.google.com/maps/place/Louis+Pinet+Avocat/@47.2243345,-1.5694803,17z/data=!3m1!4b1!4m6!3m5!1s0x4805ed860141f9fd:0xff1eadb65493fbea!8m2!3d47.2243345!4d-1.5669054!16s%2Fg%2F11ptngndzg?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=testi-marielea" target="_blank" rel="noopener noreferrer" aria-label="Avis 5 étoiles de Marie Léa C. sur Google · cliquer pour voir tous les avis">
+      <span class="testi-stars" aria-hidden="true">⭐⭐⭐⭐⭐</span>
+      <span class="quote">« Il a respecté mes délais serrés sans rien négliger. Avoir Maître Pinet à mes côtés fût un réel soulagement. »</span>
+      <span class="author">Marie Léa C.</span>
+      <span class="context">Première reprise de restaurant</span>
+    </a>
+
+    <a class="testi" href="https://www.google.com/maps/place/Louis+Pinet+Avocat/@47.2243345,-1.5694803,17z/data=!3m1!4b1!4m6!3m5!1s0x4805ed860141f9fd:0xff1eadb65493fbea!8m2!3d47.2243345!4d-1.5669054!16s%2Fg%2F11ptngndzg?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=testi-geoffrey" target="_blank" rel="noopener noreferrer" aria-label="Avis 5 étoiles de Geoffrey O. sur Google · cliquer pour voir tous les avis">
+      <span class="testi-stars" aria-hidden="true">⭐⭐⭐⭐⭐</span>
+      <span class="quote">« Probablement l'un des meilleurs accompagnements juridiques. Il comprend les enjeux business et apporte de vraies solutions. »</span>
+      <span class="author">Geoffrey O.</span>
+      <span class="context">Bail commercial complexe</span>
+    </a>
+
+  </div>
 
   <div class="divider"><span>Démarre maintenant</span></div>
 
