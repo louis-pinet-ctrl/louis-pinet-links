@@ -287,16 +287,52 @@
   .cta-btn:hover { transform: translateY(-1px); background: #d4f723; }
   .cta-btn svg { width: 14px; height: 14px; stroke: #1e1e1e; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
+  .cross-hub {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: clamp(28px, 7vw, 36px);
+    padding-top: clamp(24px, 6vw, 30px);
+    border-top: 1px solid var(--line);
+    animation: rise 0.7s 0.5s ease-out both;
+  }
+  .cross-hub .cross-label {
+    font-family: var(--sans);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  .cross-hub a {
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--ink);
+    text-decoration: none;
+    padding: 6px 13px;
+    background: var(--bg-elev);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    transition: border-color 0.25s ease, color 0.25s ease;
+  }
+  .cross-hub a:hover { border-color: var(--accent); color: var(--accent); }
+
   .foot {
     margin-top: auto;
-    padding-top: clamp(36px, 9vw, 56px);
+    padding-top: clamp(28px, 7vw, 40px);
     text-align: center;
     font-family: var(--sans);
     font-size: 11px;
     line-height: 1.7;
     color: var(--ink-mute);
     letter-spacing: 0.04em;
-    animation: rise 0.7s 0.55s ease-out both;
+    animation: rise 0.7s 0.6s ease-out both;
   }
   .foot .bar { font-family: var(--serif); font-style: italic; color: var(--ink); font-size: 12px; font-weight: 400; letter-spacing: 0; margin-bottom: 6px; }
   .foot .addr { opacity: 0.7; }
@@ -373,15 +409,22 @@
   </nav>
 
   <div class="cta-block">
-    <p class="label">Un projet de vente ou d'acquisition&nbsp;?<br>On en discute en 30 minutes.</p>
-    <a class="cta-btn" href="https://calendly.com/contact-louispinetavocat/30min?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=cession-cta" target="_blank" rel="noopener">
-      Prendre rendez-vous
+    <p class="label">Un projet de vente concret&nbsp;?<br>Contactez-moi via le formulaire de mon site.</p>
+    <a class="cta-btn" href="https://www.louispinetavocat.fr/contactez-moi?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=cession-cta" target="_blank" rel="noopener">
+      Formulaire de contact
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path d="M5 12h14" />
         <path d="M13 5l7 7-7 7" />
       </svg>
     </a>
   </div>
+
+  <nav class="cross-hub" aria-label="Autres thématiques">
+    <span class="cross-label">Explorer aussi</span>
+    <a href="./acheter.html">Acheter un resto</a>
+    <a href="./bail.html">Bail commercial</a>
+    <a href="./franchise.html">Franchise</a>
+  </nav>
 
   <footer class="foot">
     <div class="bar">Barreau de Nantes</div>

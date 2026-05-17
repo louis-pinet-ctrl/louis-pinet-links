@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Lancer un restaurant — Louis Pinet, Avocat des Restaurateurs</title>
-<meta name="description" content="Tout comprendre avant d'ouvrir un restaurant : budget juridique, structure, licences, formalités. 3 guides essentiels par Louis Pinet, Avocat des Restaurateurs au Barreau de Nantes." />
+<title>Acheter un restaurant — Louis Pinet, Avocat des Restaurateurs</title>
+<meta name="description" content="Reprendre un fonds de commerce restaurant : auditer, négocier, sécuriser. 3 guides essentiels par Louis Pinet, Avocat des Restaurateurs au Barreau de Nantes." />
 <meta name="theme-color" content="#1e1e1e" />
 <meta name="robots" content="noindex,follow" />
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Lancer un restaurant — 3 guides essentiels" />
-<meta property="og:description" content="Avant de signer un bail ou de poser ta première brique, comprends le vrai budget juridique, les structures à éviter et les licences obligatoires." />
+<meta property="og:title" content="Acheter un restaurant — 3 guides essentiels" />
+<meta property="og:description" content="Avant de signer un compromis ou un acte de cession, comprends le vrai prix, les pièges du bail repris et les conditions d'un changement de concept." />
 <meta property="og:locale" content="fr_FR" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -287,16 +287,52 @@
   .cta-btn:hover { transform: translateY(-1px); background: #d4f723; }
   .cta-btn svg { width: 14px; height: 14px; stroke: #1e1e1e; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
+  .cross-hub {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: clamp(28px, 7vw, 36px);
+    padding-top: clamp(24px, 6vw, 30px);
+    border-top: 1px solid var(--line);
+    animation: rise 0.7s 0.5s ease-out both;
+  }
+  .cross-hub .cross-label {
+    font-family: var(--sans);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  .cross-hub a {
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--ink);
+    text-decoration: none;
+    padding: 6px 13px;
+    background: var(--bg-elev);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    transition: border-color 0.25s ease, color 0.25s ease;
+  }
+  .cross-hub a:hover { border-color: var(--accent); color: var(--accent); }
+
   .foot {
     margin-top: auto;
-    padding-top: clamp(36px, 9vw, 56px);
+    padding-top: clamp(28px, 7vw, 40px);
     text-align: center;
     font-family: var(--sans);
     font-size: 11px;
     line-height: 1.7;
     color: var(--ink-mute);
     letter-spacing: 0.04em;
-    animation: rise 0.7s 0.55s ease-out both;
+    animation: rise 0.7s 0.6s ease-out both;
   }
   .foot .bar { font-family: var(--serif); font-style: italic; color: var(--ink); font-size: 12px; font-weight: 400; letter-spacing: 0; margin-bottom: 6px; }
   .foot .addr { opacity: 0.7; }
@@ -326,19 +362,19 @@
   <header class="head">
     <div class="mark" aria-hidden="true"><span>ADR</span></div>
     <div class="kicker">Hub thématique</div>
-    <h1 class="h1">Lancer mon<br>restaurant</h1>
-    <p class="intro">Avant de signer ton bail ou de poser la première brique, comprends le vrai coût juridique, la bonne structure et les licences obligatoires.</p>
+    <h1 class="h1">Acheter<br>un restaurant</h1>
+    <p class="intro">Le prix affiché n'est presque jamais le bon. Avant de signer, comprends ce que tu reprends vraiment — bail, concept, valeur réelle.</p>
   </header>
 
   <div class="divider"><span>3 articles essentiels</span></div>
 
-  <nav class="articles" aria-label="Articles lancer un restaurant">
+  <nav class="articles" aria-label="Articles acheter un restaurant">
 
-    <a class="article" href="https://www.louispinetavocat.fr/contenus/budget-ouverture-restaurant?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=lancer-budget" target="_blank" rel="noopener">
+    <a class="article" href="https://www.louispinetavocat.fr/contenus/fonds-de-commerce-restaurant-le-prix-affiche-nest-presque-jamais-le-bon?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=acheter-prix-affiche" target="_blank" rel="noopener">
       <span class="num" aria-hidden="true">1</span>
       <span class="text">
-        <span class="label">Le vrai budget pour ouvrir un restaurant</span>
-        <span class="sub">Toutes les lignes de coût juridique avant ouverture, sans les pièges cachés.</span>
+        <span class="label">Le prix affiché n'est presque jamais le bon</span>
+        <span class="sub">Comment évaluer ce qu'un fonds vaut vraiment avant de poser une offre.</span>
       </span>
       <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M5 12h14" />
@@ -346,11 +382,11 @@
       </svg>
     </a>
 
-    <a class="article" href="https://www.louispinetavocat.fr/contenus/ouvrir-un-restaurant?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=lancer-guide" target="_blank" rel="noopener">
+    <a class="article" href="https://www.louispinetavocat.fr/contenus/reprendre-restaurant-bail-commercial-acquereur?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=acheter-bail-acquereur" target="_blank" rel="noopener">
       <span class="num" aria-hidden="true">2</span>
       <span class="text">
-        <span class="label">Ouvrir un restaurant · Le guide complet</span>
-        <span class="sub">De l'idée à la signature : toutes les étapes juridiques en clair.</span>
+        <span class="label">Reprendre un restaurant · Le bail commercial côté acquéreur</span>
+        <span class="sub">Les clauses du bail repris à auditer avant signature — pour éviter les bombes à retardement.</span>
       </span>
       <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M5 12h14" />
@@ -358,11 +394,11 @@
       </svg>
     </a>
 
-    <a class="article" href="https://www.louispinetavocat.fr/contenus/cogerants-permis-dexploitation-licence-iv?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=lancer-licence" target="_blank" rel="noopener">
+    <a class="article" href="https://www.louispinetavocat.fr/contenus/racheter-restaurant-changer-concept?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=acheter-changer-concept" target="_blank" rel="noopener">
       <span class="num" aria-hidden="true">3</span>
       <span class="text">
-        <span class="label">Licence IV, permis d'exploitation, cogérants</span>
-        <span class="sub">Les formalités obligatoires que personne ne t'explique avant qu'il soit trop tard.</span>
+        <span class="label">Racheter un resto et changer de concept</span>
+        <span class="sub">Pizzeria qui devient bar à vins ? Restaurant traditionnel qui passe en fast-casual ? Ce qu'il faut savoir avant.</span>
       </span>
       <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M5 12h14" />
@@ -373,15 +409,22 @@
   </nav>
 
   <div class="cta-block">
-    <p class="label">Un projet d'ouverture concret&nbsp;?<br>On en discute en 30 minutes.</p>
-    <a class="cta-btn" href="https://calendly.com/contact-louispinetavocat/30min?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=lancer-cta" target="_blank" rel="noopener">
-      Prendre rendez-vous
+    <p class="label">Un projet de reprise concret&nbsp;?<br>Contactez-moi via le formulaire de mon site.</p>
+    <a class="cta-btn" href="https://www.louispinetavocat.fr/contactez-moi?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links&amp;utm_content=acheter-cta" target="_blank" rel="noopener">
+      Formulaire de contact
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path d="M5 12h14" />
         <path d="M13 5l7 7-7 7" />
       </svg>
     </a>
   </div>
+
+  <nav class="cross-hub" aria-label="Autres thématiques">
+    <span class="cross-label">Explorer aussi</span>
+    <a href="./cession.html">Céder un resto</a>
+    <a href="./bail.html">Bail commercial</a>
+    <a href="./franchise.html">Franchise</a>
+  </nav>
 
   <footer class="foot">
     <div class="bar">Barreau de Nantes</div>
