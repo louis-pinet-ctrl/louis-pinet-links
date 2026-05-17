@@ -285,6 +285,20 @@
     animation-delay: 0.14s;
   }
 
+  .proof:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+
+  /* Variante promesse : engagement plutot que constat chiffre */
+  .proof.pledge {
+    background: rgba(196, 233, 19, 0.1);
+    border-color: rgba(196, 233, 19, 0.3);
+  }
+
+  .proof.pledge .stars {
+    font-size: 13px;
+  }
+
   .proof .stars {
     color: var(--accent);
     font-weight: 600;
@@ -791,6 +805,10 @@
         <span class="sep">·</span>
         <span class="count">communauté de restaurateurs</span>
       </a>
+      <div class="proof pledge" role="note" aria-label="Engagement : reponse rapide et premier echange offert">
+        <span class="stars">⚡</span>
+        <span class="count">Réponse rapide · Premier échange offert</span>
+      </div>
     </div>
   </header>
 
